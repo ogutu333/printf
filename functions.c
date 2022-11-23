@@ -13,7 +13,11 @@
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
+<<<<<<< HEAD
 	int flags, int width, int precision, int size)
+=======
+		int flags, int width, int precision, int size)
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
 {
 	char c = va_arg(types, int);
 
@@ -31,7 +35,11 @@ int print_char(va_list types, char buffer[],
  * Return: Number of chars printed
  */
 int print_string(va_list types, char buffer[],
+<<<<<<< HEAD
 	int flags, int width, int precision, int size)
+=======
+		int flags, int width, int precision, int size)
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
 {
 	int length = 0, i;
 	char *str = va_arg(types, char *);
@@ -86,7 +94,11 @@ int print_string(va_list types, char buffer[],
  * Return: Number of chars printed
  */
 int print_percent(va_list types, char buffer[],
+<<<<<<< HEAD
 	int flags, int width, int precision, int size)
+=======
+		int flags, int width, int precision, int size)
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
 {
 	UNUSED(types);
 	UNUSED(buffer);
@@ -109,7 +121,11 @@ int print_percent(va_list types, char buffer[],
  * Return: Number of chars printed
  */
 int print_int(va_list types, char buffer[],
+<<<<<<< HEAD
 	int flags, int width, int precision, int size)
+=======
+		int flags, int width, int precision, int size)
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
 {
 	int i = BUFF_SIZE - 2;
 	int is_negative = 0;
@@ -153,7 +169,11 @@ int print_int(va_list types, char buffer[],
  * Return: Numbers of char printed.
  */
 int print_binary(va_list types, char buffer[],
+<<<<<<< HEAD
 	int flags, int width, int precision, int size)
+=======
+		int flags, int width, int precision, int size)
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
 {
 	unsigned int n, m, i, sum;
 	unsigned int a[32];
@@ -186,3 +206,7 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e1b31ed200d581f85efca18afabddd93d7605c9
